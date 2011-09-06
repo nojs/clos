@@ -1,0 +1,17 @@
+{
+  "author": "Dmitry Unkovsky <oil.crayons@gmail.com>",
+  "name": "noclos",
+  "description": "Common Lisp-like Object System",
+  "version": "0.0.1",
+  "homepage": "http://nojs.be",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nojs/clos.git"
+  },
+  "main": "./clos.js",
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

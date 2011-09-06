@@ -4,7 +4,7 @@
 
     "with reference to http://www.webcom.com/haahr/dylan/linearization-oopsla96.html"
 
-    var _=require("clos"),Class=_.Class,_next=_._next;
+    var _=require("./clos"),Class=_.Class,_next=_._next;
 
 
     "    A    "
@@ -13,7 +13,7 @@
     "   \ /   "
     "    D    "
 
-    var A=Class.def("A",[],function(supr){{
+    var A=Class.def("A",[],function(supr){return {
       a:10
       name:"Aa",
       log:function(){

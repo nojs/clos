@@ -77,54 +77,54 @@
     var Object=Class.def("Object",[],function(supr){return {
       whoami:function(){
         return ["object"].concat(
-          _next(this,supr.log,arguments))}}})
+          _next(this,supr.whoami,arguments))}}})
 
     var Boat=Class.def("Boat",[Object],function(supr){return {
       whoami:function(){
         return ["boat"].concat(
-          _next(this,supr.log,arguments))}}})
+          _next(this,supr.whoami,arguments))}}})
 
     var DayBoat=Class.def(
       "DayBoat",[Boat],function(supr){return {
         whoami:function(){
           return ["day-boat"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     var WheelBoat=Class.def(
       "WheelBoat", [Boat],function(supr){return {
         whoami:function(){
           return ["wheel-boat"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     var EngineLess=Class.def(
       "EngineLess", [DayBoat],function(supr){return {
         whoami:function(){
           return ["engine-less"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     var PedalWheelBoat=Class.def(
       "PedalWheelBoat", [EngineLess,WheelBoat],function(supr){return {
         whoami:function(){
           return ["pedal-wheel-boat"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     var SmallMultihull=Class.def(
       "SmallMultihull", [DayBoat],function(supr){return {
         whoami:function(){
           return ["small-multihull"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     var SmallCatamaran=Class.def(
       "SmallCatamaran",[SmallMultihull],function(supr){return {
         whoami:function(){
           return ["small-catamaran"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     var Pedalo=Class.def(
       "Pedalo",[PedalWheelBoat,SmallCatamaran],function(supr){return {
         whoami:function(){
           return ["pedalo"].concat(
-            _next(this,supr.log,arguments))}}})
+            _next(this,supr.whoami,arguments))}}})
 
     debugger;
     var p0=Pedalo.new()
